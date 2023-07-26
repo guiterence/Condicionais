@@ -1,0 +1,13 @@
+const valorDaCompra = 150;
+const numeroDeParcelas =  2;
+
+if (numeroDeParcelas===1) {
+
+    const desconto = valorDaCompra * 10/100;
+    const valorAPagar = valorDaCompra - desconto;
+    console.log (`Você deve pagar ${valorAPagar}, pois a vista tem desconto`)
+} else {
+
+    const valorDaParcela = valorDaCompra / numeroDeParcelas
+    console.log(`Você deve pagar ${numeroDeParcelas} parcelas de ${valorDaParcela}`)
+}
